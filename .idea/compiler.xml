@@ -3,6 +3,7 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
+<<<<<<< HEAD
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="maven-project02" target="17" />
@@ -11,5 +12,33 @@
       <module name="spring-boot-01" target="17" />
       <module name="springboot-web-quickStart" target="17" />
     </bytecodeTargetLevel>
+=======
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven-project02" />
+        <module name="maven-project03" />
+        <module name="springboot-web-quickStart" />
+        <module name="maven_project01" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-01" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../apache-maven-3.9.4/mvn_repo/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
+        </processorPath>
+        <module name="spring-boot-01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="25" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-01" options="-parameters" />
+      <module name="springboot-web-quickStart" options="-parameters" />
+    </option>
+>>>>>>> master
   </component>
 </project>
