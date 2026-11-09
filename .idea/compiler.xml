@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="maven-project02" target="17" />
+      <module name="maven-project03" target="17" />
+      <module name="maven_project01" target="25" />
+      <module name="spring-boot-01" target="17" />
+      <module name="springboot-web-quickStart" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
